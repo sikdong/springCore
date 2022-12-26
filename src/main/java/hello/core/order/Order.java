@@ -4,17 +4,17 @@ public class Order {
 
     private Long memberId;
     private String itemName;
-    private int itmePrice;
+    private int itemPrice;
     private int discountPrice;
 
-    public Order(Long memberId, String itemName, int itmePrice, int discountPrice) {
+    public Order(Long memberId, String itemName, int itemPrice, int discountPrice) {
         this.memberId = memberId;
         this.itemName = itemName;
-        this.itmePrice = itmePrice;
+        this.itemPrice = itemPrice;
         this.discountPrice = discountPrice;
     }
     public int calculatePrice(){
-        return itmePrice - discountPrice;
+        return itemPrice - discountPrice;
     }
     public Long getMemberId() {
         return memberId;
@@ -32,12 +32,12 @@ public class Order {
         this.itemName = itemName;
     }
 
-    public int getItmePrice() {
-        return itmePrice;
+    public int getItemPrice() {
+        return itemPrice;
     }
 
-    public void setItmePrice(int itmePrice) {
-        this.itmePrice = itmePrice;
+    public void setItemPrice(int itemPrice) {
+        this.itemPrice = itemPrice;
     }
 
     public int getDiscountPrice() {
@@ -53,7 +53,7 @@ public class Order {
         return "Order{" +
                 "memberId=" + memberId +
                 ", itemName='" + itemName + '\'' +
-                ", itmePrice=" + itmePrice +
+                ", itmePrice=" + itemPrice +
                 ", discountPrice=" + discountPrice +
                 '}';
 
